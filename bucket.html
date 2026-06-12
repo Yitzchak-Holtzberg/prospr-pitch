@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prospr — Bucket Detail</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="pitch-nav">
+  <span class="brand">prospr</span>
+  <a href="index.html">The Idea</a>
+  <a href="login.html">Login</a>
+  <a href="home.html">Home</a>
+  <a class="active" href="bucket.html">Bucket Detail</a>
+  <a href="allocate.html">Payday</a>
+</nav>
+
+<div class="page">
+  <h2 class="page-title">One bucket, one rule</h2>
+  <p class="page-sub">Every bucket has exactly one rule, written in plain words: "Groceries gets
+  $150 every Monday." That's the entire mental model — no rollover matrices, no percentage
+  splits, no settings maze (those exist, but behind the door, for those who want them).</p>
+
+  <div class="frames">
+    <div>
+      <div class="desktop">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">app.prospr.money/buckets/groceries</span></div>
+        <div class="shell">
+          <div class="rail">
+            <div class="item"><span class="ms">home</span>Home</div>
+            <div class="item active"><span class="ms">inventory_2</span>Buckets</div>
+            <div class="item"><span class="ms">flag</span>Plan</div>
+            <div class="item"><span class="ms">settings</span>Settings</div>
+          </div>
+          <div class="main" style="display:flex;gap:22px;">
+            <div style="width:230px;">
+              <p style="color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.06em;margin-bottom:10px;">BUCKETS</p>
+              <div class="bucket-tile tile-green" style="margin-bottom:10px;border:2px solid var(--primary);"><span class="ms">grocery</span> Groceries<span class="amt">$86</span></div>
+              <div class="bucket-tile" style="background:var(--surface);border:1px solid var(--outline);margin-bottom:10px;color:var(--on-tertiary-container);"><span class="ms">celebration</span> Fun<span class="amt">$32</span></div>
+              <div class="bucket-tile" style="background:var(--surface);border:1px solid var(--outline);color:var(--muted);"><span class="ms">directions_car</span> Transport<span class="amt">resting</span></div>
+            </div>
+            <div style="flex:1;">
+              <p style="font-size:20px;font-weight:700;"><span class="ms" style="color:var(--primary);font-size:26px;">grocery</span> Groceries</p>
+              <div class="hero-card" style="margin:14px 0;">
+                <div class="label">Left this week</div>
+                <div class="amount">$86</div>
+                <div style="margin-top:10px;"><div class="bar" style="background:rgba(255,255,255,.25);"><i style="width:57%;background:var(--on-primary);"></i></div></div>
+                <div class="note">$64 of $150 used · 4 days until refill</div>
+              </div>
+              <div class="card" style="margin-bottom:14px;display:flex;align-items:center;gap:12px;">
+                <span class="ms" style="color:var(--tertiary);font-size:24px;">autorenew</span>
+                <div><b style="font-size:14.5px;">The rule</b><br>
+                <span style="color:var(--muted);font-size:14px;">$150 lands here every Monday.</span></div>
+                <span style="margin-left:auto;color:var(--muted);font-size:13px;font-weight:600;">Change</span>
+              </div>
+              <div class="card">
+                <b style="font-size:14px;">This week</b>
+                <div class="list-row"><span>Aldi</span><span>−$23.10 <span class="when">yesterday</span></span></div>
+                <div class="list-row"><span>Costco</span><span>−$41.00 <span class="when">Sunday</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-label">Desktop · Master–detail</div>
+    </div>
+
+    <div>
+      <div class="phone">
+        <div class="screen">
+          <p style="font-size:13px;color:var(--muted);margin-bottom:14px;"><span class="ms" style="font-size:18px;">arrow_back</span> Buckets</p>
+          <p style="font-size:19px;font-weight:700;margin-bottom:12px;"><span class="ms" style="color:var(--primary);font-size:24px;">grocery</span> Groceries</p>
+          <div class="hero-card">
+            <div class="label">Left this week</div>
+            <div class="amount">$86</div>
+            <div style="margin-top:10px;"><div class="bar" style="background:rgba(255,255,255,.25);"><i style="width:57%;background:var(--on-primary);"></i></div></div>
+            <div class="note">$64 of $150 used · refills in 4 days</div>
+          </div>
+          <div class="card" style="margin:12px 0;display:flex;align-items:center;gap:10px;">
+            <span class="ms" style="color:var(--tertiary);font-size:22px;">autorenew</span>
+            <div style="font-size:13.5px;"><b>The rule</b><br><span style="color:var(--muted);">$150 every Monday</span></div>
+          </div>
+          <div class="card" style="margin-bottom:14px;">
+            <b style="font-size:13.5px;">This week</b>
+            <div class="list-row"><span>Aldi</span><span>−$23.10</span></div>
+            <div class="list-row"><span>Costco</span><span>−$41.00</span></div>
+          </div>
+          <div style="text-align:center;margin-bottom:14px;"><button class="fab"><span class="ms">add</span> Log a spend</button></div>
+          <div class="bottom-nav">
+            <div class="item"><span class="ms">home</span>Home</div>
+            <div class="item active"><span class="ms">inventory_2</span>Buckets</div>
+            <div class="item"><span class="ms">flag</span>Plan</div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-label">Mobile · Bucket detail</div>
+    </div>
+  </div>
+
+  <div class="why">
+    <div class="chip"><b><span class="ms">subject</span>Rules in plain words</b>
+      "$150 every Monday" — not a form of dropdowns. Dyscalculia-friendly: the sentence is the configuration.</div>
+    <div class="chip"><b><span class="ms">hourglass_bottom</span>Countdown, not blame</b>
+      A used-up bucket shows time-to-refill, turning "I failed" into "Monday is coming." Same data, opposite feeling.</div>
+    <div class="chip"><b><span class="ms">history</span>Shallow history</b>
+      This week only, by default. Deep reports exist under Plan — never forced on the daily path.</div>
+  </div>
+</div>
+
+</body>
+</html>

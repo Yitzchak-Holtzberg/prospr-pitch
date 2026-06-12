@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prospr — Payday</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="pitch-nav">
+  <span class="brand">prospr</span>
+  <a href="index.html">The Idea</a>
+  <a href="login.html">Login</a>
+  <a href="home.html">Home</a>
+  <a href="bucket.html">Bucket Detail</a>
+  <a class="active" href="allocate.html">Payday</a>
+</nav>
+
+<div class="page">
+  <h2 class="page-title">Payday, one decision at a time</h2>
+  <p class="page-sub">When money arrives, Prospr doesn't show a spreadsheet to fill in — it walks
+  the user through their buckets one at a time, with last time's answer pre-filled. Accepting
+  every suggestion takes four taps. The wizard is where v1's planning power meets ND-friendly
+  pacing.</p>
+
+  <div class="frames">
+    <div>
+      <div class="desktop" style="min-width:560px;">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">app.prospr.money/payday</span></div>
+        <div style="min-height:520px;display:flex;align-items:center;justify-content:center;">
+          <div style="width:440px;padding:30px 0;">
+            <div style="text-align:center;margin-bottom:22px;">
+              <span class="ms" style="font-size:36px;color:var(--tertiary);background:var(--tertiary-container);border-radius:999px;padding:16px;">paid</span>
+              <h2 style="font-size:26px;margin-top:14px;">$1,200 just landed 🎉</h2>
+              <p style="color:var(--muted);font-size:14.5px;">Let's give every dollar a home. Step 2 of 4.</p>
+            </div>
+            <div class="card" style="border:2px solid var(--primary);">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <span class="ms" style="font-size:28px;color:var(--primary);">grocery</span>
+                <div><b style="font-size:17px;">Groceries</b><br>
+                <span style="color:var(--muted);font-size:13.5px;">Last payday you put in $150</span></div>
+                <div style="margin-left:auto;font-family:'Fraunces',serif;font-size:28px;font-weight:700;color:var(--primary);">$150</div>
+              </div>
+              <div style="display:flex;gap:10px;margin-top:16px;">
+                <button class="btn-primary" style="flex:2;"><span class="ms">check</span> Sounds right</button>
+                <button class="btn-outline" style="flex:1;">Adjust</button>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:center;gap:8px;margin-top:18px;">
+              <i style="width:10px;height:10px;border-radius:99px;background:var(--primary);display:inline-block;"></i>
+              <i style="width:10px;height:10px;border-radius:99px;background:var(--primary);display:inline-block;"></i>
+              <i style="width:10px;height:10px;border-radius:99px;background:var(--outline);display:inline-block;"></i>
+              <i style="width:10px;height:10px;border-radius:99px;background:var(--outline);display:inline-block;"></i>
+            </div>
+            <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:14px;">$850 left to place · Bills ✓ done</p>
+          </div>
+        </div>
+      </div>
+      <div class="frame-label">Desktop · Payday wizard</div>
+    </div>
+
+    <div>
+      <div class="phone">
+        <div class="screen" style="justify-content:center;">
+          <div style="text-align:center;margin-bottom:20px;">
+            <span class="ms" style="font-size:32px;color:var(--tertiary);background:var(--tertiary-container);border-radius:999px;padding:14px;">paid</span>
+            <h2 style="font-size:23px;margin-top:12px;">$1,200 just landed 🎉</h2>
+            <p style="color:var(--muted);font-size:13.5px;">Every dollar gets a home. Step 2 of 4.</p>
+          </div>
+          <div class="card" style="border:2px solid var(--primary);">
+            <div style="display:flex;align-items:center;gap:10px;">
+              <span class="ms" style="font-size:24px;color:var(--primary);">grocery</span>
+              <div><b style="font-size:15px;">Groceries</b><br>
+              <span style="color:var(--muted);font-size:12.5px;">Last time: $150</span></div>
+              <div style="margin-left:auto;font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--primary);">$150</div>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:14px;">
+              <button class="btn-primary" style="flex:2;font-size:13.5px;"><span class="ms">check</span> Sounds right</button>
+              <button class="btn-outline" style="flex:1;font-size:13.5px;">Adjust</button>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:center;gap:7px;margin-top:16px;">
+            <i style="width:9px;height:9px;border-radius:99px;background:var(--primary);display:inline-block;"></i>
+            <i style="width:9px;height:9px;border-radius:99px;background:var(--primary);display:inline-block;"></i>
+            <i style="width:9px;height:9px;border-radius:99px;background:var(--outline);display:inline-block;"></i>
+            <i style="width:9px;height:9px;border-radius:99px;background:var(--outline);display:inline-block;"></i>
+          </div>
+          <p style="text-align:center;color:var(--muted);font-size:12.5px;margin-top:12px;">$850 left to place · Bills ✓ done</p>
+        </div>
+      </div>
+      <div class="frame-label">Mobile · Payday wizard</div>
+    </div>
+  </div>
+
+  <div class="why">
+    <div class="chip"><b><span class="ms">counter_1</span>Single-question flow</b>
+      One bucket per screen beats a 20-row grid. Decision fatigue is the #1 reason budget setups get abandoned.</div>
+    <div class="chip"><b><span class="ms">smart_toy</span>Pre-filled from last time</b>
+      The default answer is always "what you did before" — accepting the whole plan takes seconds, adjusting is optional.</div>
+    <div class="chip"><b><span class="ms">lock</span>Bills go first, automatically</b>
+      Obligations are set aside before any discretionary question is asked — the safe-to-spend number is honest by construction.</div>
+  </div>
+</div>
+
+</body>
+</html>

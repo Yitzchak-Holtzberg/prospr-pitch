@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prospr — Home</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="pitch-nav">
+  <span class="brand">prospr</span>
+  <a href="index.html">The Idea</a>
+  <a href="login.html">Login</a>
+  <a class="active" href="home.html">Home</a>
+  <a href="bucket.html">Bucket Detail</a>
+  <a href="allocate.html">Payday</a>
+</nav>
+
+<div class="page">
+  <h2 class="page-title">The whole budget in one glance</h2>
+  <p class="page-sub">Home leads with the only number that matters — safe to spend — then
+  shows every bucket as a tile. No drilling, no math, no surprises. Note the Transport
+  bucket: it's used up, so it <em>rests</em>. It never turns red.</p>
+
+  <div class="frames">
+    <div>
+      <div class="desktop">
+        <div class="chrome"><i></i><i></i><i></i><span class="url">app.prospr.money/home</span></div>
+        <div class="shell">
+          <div class="rail">
+            <div class="item active"><span class="ms">home</span>Home</div>
+            <div class="item"><span class="ms">inventory_2</span>Buckets</div>
+            <div class="item"><span class="ms">flag</span>Plan</div>
+            <div class="item"><span class="ms">settings</span>Settings</div>
+          </div>
+          <div class="main">
+            <p style="color:var(--muted);font-size:14px;margin-bottom:14px;">Good morning, Sam <span class="ms" style="font-size:16px;color:var(--tertiary);">wb_sunny</span></p>
+            <div style="display:flex;gap:16px;">
+              <div class="hero-card" style="flex:1;">
+                <div class="label">Safe to spend this week</div>
+                <div class="amount">$142</div>
+                <div class="note">All bills covered <span class="ms" style="font-size:13px;">check_circle</span> · refills Monday</div>
+              </div>
+              <div class="card" style="flex:1.2;">
+                <b style="font-size:14px;">Recent activity</b>
+                <div class="list-row"><span><span class="ms" style="color:var(--primary);">local_cafe</span> Coffee</span><span>−$4.50 <span class="when">today</span></span></div>
+                <div class="list-row"><span><span class="ms" style="color:var(--primary);">grocery</span> Aldi</span><span>−$23.10 <span class="when">yesterday</span></span></div>
+                <div class="list-row"><span><span class="ms" style="color:var(--primary);">directions_bus</span> Metro card</span><span>−$33.00 <span class="when">Mon</span></span></div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0;">
+              <div class="bucket-tile tile-green"><span class="ms">grocery</span> Groceries<span class="amt">$86</span><span class="sub">left this week</span></div>
+              <div class="bucket-tile tile-warm"><span class="ms">celebration</span> Fun<span class="amt">$32</span><span class="sub">left this week</span></div>
+              <div class="bucket-tile tile-rest"><span class="ms">directions_car</span> Transport<span class="amt">resting</span><span class="sub">refills Monday</span></div>
+              <div class="bucket-tile tile-green"><span class="ms">receipt_long</span> Bills<span class="amt">on track</span><span class="sub">rent set aside ✓</span></div>
+            </div>
+            <button class="fab"><span class="ms">add</span> Log a spend</button>
+          </div>
+        </div>
+      </div>
+      <div class="frame-label">Desktop · Rail + dashboard</div>
+    </div>
+
+    <div>
+      <div class="phone">
+        <div class="screen">
+          <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">Good morning, Sam <span class="ms" style="font-size:15px;color:var(--tertiary);">wb_sunny</span></p>
+          <div class="hero-card">
+            <div class="label">Safe to spend this week</div>
+            <div class="amount">$142</div>
+            <div class="note">All bills covered <span class="ms" style="font-size:12px;">check_circle</span></div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0;">
+            <div class="bucket-tile tile-green"><span class="ms">grocery</span> Groceries<span class="amt">$86</span><span class="sub">left</span></div>
+            <div class="bucket-tile tile-warm"><span class="ms">celebration</span> Fun<span class="amt">$32</span><span class="sub">left</span></div>
+            <div class="bucket-tile tile-rest"><span class="ms">directions_car</span> Transport<span class="amt">resting</span><span class="sub">refills Mon</span></div>
+            <div class="bucket-tile tile-green"><span class="ms">receipt_long</span> Bills<span class="amt">on track</span><span class="sub">rent ✓</span></div>
+          </div>
+          <div style="text-align:center;margin-bottom:14px;"><button class="fab"><span class="ms">add</span> Log a spend</button></div>
+          <div class="bottom-nav">
+            <div class="item active"><span class="ms">home</span>Home</div>
+            <div class="item"><span class="ms">inventory_2</span>Buckets</div>
+            <div class="item"><span class="ms">flag</span>Plan</div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-label">Mobile · Bucket grid</div>
+    </div>
+  </div>
+
+  <div class="why">
+    <div class="chip"><b><span class="ms">looks_one</span>One trusted number</b>
+      "$142 safe to spend" already accounts for bills and goals — the user never does subtraction in their head.</div>
+    <div class="chip"><b><span class="ms">bedtime</span>"Resting", not red</b>
+      v1 flagged overspending in red. Here a spent bucket goes calm grey and simply waits for its refill — no shame spiral, no app avoidance.</div>
+    <div class="chip"><b><span class="ms">bolt</span>One-tap capture</b>
+      The single terracotta action logs a spend in under five seconds — low friction keeps ADHD users logging.</div>
+  </div>
+</div>
+
+</body>
+</html>
